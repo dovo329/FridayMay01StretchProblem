@@ -40,6 +40,7 @@
 
 - (NSDictionary *)dictionaryForMeFromFile {
     NSString * plistPath = [[NSBundle mainBundle] pathForResource:@"dictionary" ofType:@"plist"];
+    NSLog(@"plistPath = %@", plistPath);
     return [NSDictionary dictionaryWithContentsOfFile:plistPath];
 }
 
